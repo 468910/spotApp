@@ -10,6 +10,8 @@
 		18F1DB291C089E7C00505C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1DB281C089E7C00505C32 /* AppDelegate.swift */; };
 		18F1DB2B1C089E7C00505C32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1DB2A1C089E7C00505C32 /* ViewController.swift */; };
 		18F1DB301C089E7C00505C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F1DB2F1C089E7C00505C32 /* Assets.xcassets */; };
+		18F1DB3C1C08AE1F00505C32 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1DB3B1C08AE1F00505C32 /* RestClient.swift */; settings = {ASSET_TAGS = (); }; };
+		18F1DB3F1C08CF5B00505C32 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1DB3E1C08CF5B00505C32 /* Playlist.swift */; settings = {ASSET_TAGS = (); }; };
 		8F2D0C4A44F359DC481AB83A /* Pods_SpotitubeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CAEC53B721495697DFB6BF /* Pods_SpotitubeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +22,8 @@
 		18F1DB2A1C089E7C00505C32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18F1DB2F1C089E7C00505C32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F1DB341C089E7C00505C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F1DB3B1C08AE1F00505C32 /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		18F1DB3E1C08CF5B00505C32 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		3EAF4C352BE42A833F4F81E5 /* Pods-SpotitubeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotitubeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotitubeApp/Pods-SpotitubeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C0895DFF9B953F1CC358A57C /* Pods-SpotitubeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotitubeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotitubeApp/Pods-SpotitubeApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,12 +69,30 @@
 		18F1DB271C089E7B00505C32 /* SpotitubeApp */ = {
 			isa = PBXGroup;
 			children = (
+				18F1DB3D1C08CF4400505C32 /* Domain */,
+				18F1DB3A1C08AD2600505C32 /* Rest */,
 				18F1DB281C089E7C00505C32 /* AppDelegate.swift */,
 				18F1DB2A1C089E7C00505C32 /* ViewController.swift */,
 				18F1DB2F1C089E7C00505C32 /* Assets.xcassets */,
 				18F1DB341C089E7C00505C32 /* Info.plist */,
 			);
 			path = SpotitubeApp;
+			sourceTree = "<group>";
+		};
+		18F1DB3A1C08AD2600505C32 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				18F1DB3B1C08AE1F00505C32 /* RestClient.swift */,
+			);
+			name = Rest;
+			sourceTree = "<group>";
+		};
+		18F1DB3D1C08CF4400505C32 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				18F1DB3E1C08CF5B00505C32 /* Playlist.swift */,
+			);
+			name = Domain;
 			sourceTree = "<group>";
 		};
 		837463401803ED473FA01E8F /* Pods */ = {
@@ -202,7 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F1DB2B1C089E7C00505C32 /* ViewController.swift in Sources */,
+				18F1DB3C1C08AE1F00505C32 /* RestClient.swift in Sources */,
 				18F1DB291C089E7C00505C32 /* AppDelegate.swift in Sources */,
+				18F1DB3F1C08CF5B00505C32 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
